@@ -1,0 +1,24 @@
+- name: 接口用例的名称
+  request:
+    data:
+      companyCode: fulan
+      courseId: 1519921311010230272
+      siteCode: fulan
+    method: get
+    url: https://mg.kmelearning.com/web-manage/manage/course/chapter/list
+  validate:
+  - equals:
+      status_code: 200
+  - contains: 没有令牌信息,请重新登陆
+- name: 接口用例的名称
+  request:
+    data:
+      companyCode: fulan
+      courseId: 1519921311010230272
+      siteCode: fulan
+    method: get
+    url: https://mg.kmelearning.com/web-manage/manage/course/chapter/list
+  validate:
+  - equals:
+      status_code: 200
+  - contains: 没有令牌信息,请重新登陆

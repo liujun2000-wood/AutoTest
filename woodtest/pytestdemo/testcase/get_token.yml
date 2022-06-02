@@ -1,0 +1,31 @@
+-   name: $csv{name}
+    parameters:
+       name-appid-secret-grant_type-assert_str: data/get_token_data.csv
+    request:
+       method: get
+       url: system/public/pressure/test/get/token
+       data:
+          appid: $csv{appid}
+          secret: $csv{secret}
+          grant_type: $csv{grant_type}
+    extract:
+       access_token: '"":"(.+?)"'
+    validate:
+      - eq: {msg: success}
+      - eq: {code: 1000}
+      - contains: $csv{assert_str}
+
+-   name: $csv{name}
+    parameters:
+       name-appid-secret-grant_type-assert_str: data/get_token_data.csv
+    request:
+       method: get
+       url: system/public/pressure/test/get/token={{access_token}}
+       # 采用热加载的方式加载
+       data: {"":{"":1111,"name":"abc${get_random_number()}"}}
+    extract:
+       access_token: '"":"(.+?)"'
+    validate:
+      - eq: {msg: success}
+      - eq: {code: 1000}
+      - contains: $csv{assert_str}

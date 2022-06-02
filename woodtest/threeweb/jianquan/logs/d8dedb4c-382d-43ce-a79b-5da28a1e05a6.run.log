@@ -1,0 +1,74 @@
+2022-04-21 22:12:04.309 | INFO     | httprunner.runner:test_start:450 - Start to run testcase: testcase description, TestCase ID: d8dedb4c-382d-43ce-a79b-5da28a1e05a6
+2022-04-21 22:12:04.312 | INFO     | httprunner.runner:__run_step:292 - run step begin: /system/manage/dashboard/activeAccount >>>>>>
+2022-04-21 22:12:04.946 | DEBUG    | httprunner.client:request:186 - client IP: 192.168.0.107, Port: 27827
+2022-04-21 22:12:04.947 | DEBUG    | httprunner.client:request:194 - server IP: 115.220.8.197, Port: 443
+2022-04-21 22:12:04.948 | DEBUG    | httprunner.client:log_print:40 - 
+================== request details ==================
+method   : GET
+url      : https://mg.kmelearning.com/system/manage/dashboard/activeAccount?companyCode=fulan&siteCode=fulan
+headers  : {
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.87 Safari/537.36 SE 2.X MetaSr 1.0",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept": "*/*",
+    "Connection": "keep-alive",
+    "Authorization": "eyJ0eXBlIjoiSldUIiwiYWxnIjoiSFMyNTYifQ.eyJpYXQiOjE2NTA1NDg4MzQsInN1YiI6InFhdGVzdDEiLCJpc3MiOiJlbGVhcm4iLCJjb21wYW55Q29kZSI6ImZ1bGFuIiwiYWNjb3VudElkIjoiMTMzOTQ2MTUxNzI5ODMxOTM2MCIsImNvbXBhbnlJZCI6IjEwMTYyNzM5MjE3NTYyNDYwMTYiLCJjb21wYW55TmFtZSI6IuS4iua1t-eUn-S6p-a1i-ivleermeeCuSIsImNvbnRleHQiOiJ7XCJhY2NvdW50RnVsbE5hbWVcIjpcIlwiLFwiYWNjb3VudElkXCI6MTMzOTQ2MTUxNzI5ODMxOTM2MCxcImFjY291bnROYW1lXCI6XCJcIixcImFkbWluXCI6ZmFsc2UsXCJhdXRoQ29kZVwiOlwiXCIsXCJjb21wYW55Q29kZVwiOlwiZnVsYW5cIixcImNvbXBhbnlJZFwiOjEwMTYyNzM5MjE3NTYyNDYwMTYsXCJjb21wYW55TmFtZVwiOlwi5LiK5rW355Sf5Lqn5rWL6K-V56uZ54K5XCIsXCJoZWFkUG9ydHJhaXRcIjpcIlwiLFwiaXNDb21tdW5pdHlNYW5hZ2VyXCI6ZmFsc2UsXCJpc09ubHlDb21tdW5pdHlcIjpmYWxzZSxcIm1hbmFnZXJJZHNcIjpbXSxcIm9yZ0lkXCI6MTM0NDQ2NTIxMjM3MTMzMzEyMCxcIm9yZ0lkc1wiOltdLFwib3JnTmFtZVwiOlwiXCIsXCJwY0JpbmRMb2dpblwiOmZhbHNlLFwicmVtb3RlQWRkclwiOlwiMTAuNDIuMjM2LjQyXCIsXCJyZXF1ZXN0SWRcIjpcIjE0NWE3MGUxLTVkNmEtNDJhZC05OTZmLTBmMDI0Yjg3MmNmMlwiLFwicmVxdWVzdFR5cGVcIjpcIlwiLFwic2l0ZUNvZGVcIjpcImZ1bGFuXCIsXCJzaXRlSWRcIjoxMDE2MjczOTIxODQwMTMyMDk2LFwic2l0ZU1lbWJlclwiOjAsXCJzaXRlTmFtZVwiOlwi5LiK5rW35piT55-l5byA5Y-R5LiT55So56uZ54K5XCJ9Iiwic2l0ZUlkIjoiMTAxNjI3MzkyMTg0MDEzMjA5NiIsImV4cCI6MTY1MTE1MzYzNCwibmJmIjoxNjUwNTQ4ODM0fQ.Md9Y4uxHZz-GtzBXNI_91twn5J2USR2bpxmst9jsTds",
+    "Sec-Fetch-Dest": "empty",
+    "Sec-Fetch-Mode": "cors",
+    "Sec-Fetch-Site": "same-origin",
+    "companyId": "1314",
+    "siteId": "1314",
+    "HRUN-Request-ID": "HRUN-d8dedb4c-382d-43ce-a79b-5da28a1e05a6-324315"
+}
+cookies  : {}
+body     : None
+
+2022-04-21 22:12:04.955 | DEBUG    | httprunner.client:log_print:40 - 
+================== response details ==================
+status_code : 200
+headers  : {
+    "Server": "Tengine",
+    "Content-Type": "application/json;charset=UTF-8",
+    "Transfer-Encoding": "chunked",
+    "Connection": "keep-alive",
+    "Vary": "Accept-Encoding, Origin, Access-Control-Request-Method, Access-Control-Request-Headers",
+    "Date": "Thu, 21 Apr 2022 14:12:02 GMT",
+    "X-Frame-Options": "SAMEORIGIN",
+    "Via": "cache20.l2et2-2[88,0], dynamic3.cn1961[101,0]",
+    "Cache-Control": "no-cache, no-store",
+    "Timing-Allow-Origin": "*",
+    "EagleId": "7ae031b316505503227213477e",
+    "Content-Encoding": "gzip"
+}
+cookies  : {}
+encoding : UTF-8
+content_type : application/json;charset=UTF-8
+body     : {
+    "msg": "success",
+    "code": "1000",
+    "data": {
+        "accountActive": 8,
+        "accountActivePercentage": "0.13%",
+        "startDay": 1603036800000,
+        "accountTotal": 6028,
+        "endDay": 1603555200000,
+        "module": "",
+        "siteId": "1016273921840132096",
+        "id": "1320424948455542784",
+        "weekChain": "63%",
+        "processTime": 1603648800000
+    },
+    "subCode": "",
+    "subMsg": "",
+    "page": ""
+}
+
+2022-04-21 22:12:04.956 | INFO     | httprunner.client:request:217 - status_code: 200, response_time(ms): 629.69 ms, response_length: 0 bytes
+2022-04-21 22:12:04.957 | INFO     | httprunner.response:validate:258 - assert status_code equal 200(int)	==> pass
+2022-04-21 22:12:04.958 | INFO     | httprunner.response:validate:258 - assert headers."Content-Type" equal application/json;charset=UTF-8(str)	==> pass
+2022-04-21 22:12:04.959 | INFO     | httprunner.response:validate:258 - assert body.msg equal success(str)	==> pass
+2022-04-21 22:12:04.959 | INFO     | httprunner.response:validate:258 - assert body.code equal 1000(str)	==> pass
+2022-04-21 22:12:04.960 | INFO     | httprunner.response:validate:258 - assert body.subCode equal (str)	==> pass
+2022-04-21 22:12:04.961 | INFO     | httprunner.response:validate:258 - assert body.subMsg equal (str)	==> pass
+2022-04-21 22:12:04.961 | INFO     | httprunner.response:validate:258 - assert body.page equal (str)	==> pass
+2022-04-21 22:12:04.962 | INFO     | httprunner.runner:__run_step:304 - run step end: /system/manage/dashboard/activeAccount <<<<<<
+

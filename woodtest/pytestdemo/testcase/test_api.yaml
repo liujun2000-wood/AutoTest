@@ -1,0 +1,45 @@
+#用例1
+-
+  name: 获得token
+  request:
+      url: https://uat.wechat.kmelearning.com/system/public/pressure/test/get/token
+      method: get
+      headers:
+          Content-Type: application/json
+      params:
+          companyCode: shyz
+          siteCode: shyz
+          accountId: 1314
+  validate:
+          - eq: {msg: success}
+          - eq: {code: 1000}
+#用例2
+-
+  name: 获得token
+  request:
+      url: https://uat.wechat.kmelearning.com/system/public/pressure/test/get/token
+      method: get
+      headers:
+          Content-Type: application/json
+      params:
+          companyCode: shyz
+          siteCode: shyz
+          accountId: 1387228507406544896
+  validate:
+          - eq: {msg: success}
+          - eq: {code: 1000}
+#用例3
+-
+  name: 获得token
+  request:
+      url: https://uat.wechat.kmelearning.com/system/public/pressure/test/get/token
+      method: get
+      headers:
+          Content-Type: application/json
+      params:
+          companyCode: shyz
+          siteCode: shyz
+          accountId: 1387228507410739200
+  validate:
+          - eq: {msg: success}
+          - eq: {code: 1000}

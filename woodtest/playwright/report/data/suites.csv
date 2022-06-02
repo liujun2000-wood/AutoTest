@@ -1,0 +1,3 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Tue May 31 11:26:45 CST 2022","Tue May 31 11:26:48 CST 2022","3046","","test_web","Test_web","","","登录失败","登录失败测试用例"
+"passed","Tue May 31 11:26:41 CST 2022","Tue May 31 11:26:45 CST 2022","3711","","test_web","Test_web","","","登录成功","登录成功测试用例"

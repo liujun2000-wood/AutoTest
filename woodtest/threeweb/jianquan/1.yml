@@ -1,0 +1,46 @@
+config:
+    name: testcase description
+    variables: {}
+teststeps:
+-   name: /system/manage/dashboard/activeAccount
+    request:
+        headers:
+            Authorization: eyJ0eXBlIjoiSldUIiwiYWxnIjoiSFMyNTYifQ.eyJpYXQiOjE2NTA1NDg4MzQsInN1YiI6InFhdGVzdDEiLCJpc3MiOiJlbGVhcm4iLCJjb21wYW55Q29kZSI6ImZ1bGFuIiwiYWNjb3VudElkIjoiMTMzOTQ2MTUxNzI5ODMxOTM2MCIsImNvbXBhbnlJZCI6IjEwMTYyNzM5MjE3NTYyNDYwMTYiLCJjb21wYW55TmFtZSI6IuS4iua1t-eUn-S6p-a1i-ivleermeeCuSIsImNvbnRleHQiOiJ7XCJhY2NvdW50RnVsbE5hbWVcIjpcIlwiLFwiYWNjb3VudElkXCI6MTMzOTQ2MTUxNzI5ODMxOTM2MCxcImFjY291bnROYW1lXCI6XCJcIixcImFkbWluXCI6ZmFsc2UsXCJhdXRoQ29kZVwiOlwiXCIsXCJjb21wYW55Q29kZVwiOlwiZnVsYW5cIixcImNvbXBhbnlJZFwiOjEwMTYyNzM5MjE3NTYyNDYwMTYsXCJjb21wYW55TmFtZVwiOlwi5LiK5rW355Sf5Lqn5rWL6K-V56uZ54K5XCIsXCJoZWFkUG9ydHJhaXRcIjpcIlwiLFwiaXNDb21tdW5pdHlNYW5hZ2VyXCI6ZmFsc2UsXCJpc09ubHlDb21tdW5pdHlcIjpmYWxzZSxcIm1hbmFnZXJJZHNcIjpbXSxcIm9yZ0lkXCI6MTM0NDQ2NTIxMjM3MTMzMzEyMCxcIm9yZ0lkc1wiOltdLFwib3JnTmFtZVwiOlwiXCIsXCJwY0JpbmRMb2dpblwiOmZhbHNlLFwicmVtb3RlQWRkclwiOlwiMTAuNDIuMjM2LjQyXCIsXCJyZXF1ZXN0SWRcIjpcIjE0NWE3MGUxLTVkNmEtNDJhZC05OTZmLTBmMDI0Yjg3MmNmMlwiLFwicmVxdWVzdFR5cGVcIjpcIlwiLFwic2l0ZUNvZGVcIjpcImZ1bGFuXCIsXCJzaXRlSWRcIjoxMDE2MjczOTIxODQwMTMyMDk2LFwic2l0ZU1lbWJlclwiOjAsXCJzaXRlTmFtZVwiOlwi5LiK5rW35piT55-l5byA5Y-R5LiT55So56uZ54K5XCJ9Iiwic2l0ZUlkIjoiMTAxNjI3MzkyMTg0MDEzMjA5NiIsImV4cCI6MTY1MTE1MzYzNCwibmJmIjoxNjUwNTQ4ODM0fQ.Md9Y4uxHZz-GtzBXNI_91twn5J2USR2bpxmst9jsTds
+            Sec-Fetch-Dest: empty
+            Sec-Fetch-Mode: cors
+            Sec-Fetch-Site: same-origin
+            User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML,
+                like Gecko) Chrome/80.0.3987.87 Safari/537.36 SE 2.X MetaSr 1.0
+            companyId: '1314'
+            siteId: '1314'
+        method: GET
+        params:
+            companyCode: fulan
+            siteCode: fulan
+        url: https://mg.kmelearning.com/system/manage/dashboard/activeAccount
+    extract: #提取token，从返回值中提取access_session值
+        tokens： content.access_session
+        #使用：
+        access_token： $tokens
+    validate:
+    -   eq:
+        - status_code
+        - 200
+    -   eq:
+        - headers.Content-Type
+        - application/json;charset=UTF-8
+    -   eq:
+        - content.msg
+        - success
+    -   eq:
+        - content.code
+        - '1000'
+    -   eq:
+        - content.subCode
+        - ''
+    -   eq:
+        - content.subMsg
+        - ''
+    -   eq:
+        - content.page
+        - ''
