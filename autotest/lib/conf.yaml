@@ -1,0 +1,13 @@
+logger:
+  filebname: lib/log/log.log
+  # a:append,追加;w:write,覆盖
+  filemode: w
+  # %(leveno)s : 打印日志级别的数字; %(levelname)s: 打印日志级别的名称;
+  # %(pathname)s: 打印当前执行程序的路径,其实就是sys.argv[0];
+  # %(filename)s: 打印当前执行程序名; %(funcName): 打印当前的函数;
+  # %(lineno)d: 打印当前行号;%(asctime)s: 打印时间;
+  # %(thread)d: 打印线程id; %(threadName)s: 打印线程名称
+  # %(process)d: 打印进程id; %(message)s: 打印日志信息
+  format: "%(asctime)s - %(levelname)s -%(message)s "
+  # 日志必须大写 DEBUG,INFO,WARNING,ERROR,EXCEPTION
+  level: DEBUG
