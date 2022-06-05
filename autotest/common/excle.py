@@ -152,3 +152,6 @@ class Writer:
 
 get_reader = Reader()
 get_writer = Writer()
+
+if __name__ == '__main__':
+    get_reader.get_sheets()

@@ -7,6 +7,7 @@ import pytest
 
 from autotest.ddt.excel_ddt import ddt
 
+
 @allure.feature('#' + str(ddt.feature_idx) + ''+ ddt.feature)
 class Test_web:
 
@@ -19,8 +20,7 @@ class Test_web:
             # 没有就不传
             return func()
 
-
-    @allure.story('#' + str(ddt.story_idx) +''+ ddt.story)
+    @allure.story('#' + str(ddt.story_idx) + '' + ddt.story)
     @pytest.mark.parametrize('cases', ddt.cases)
     def test_case(self,cases):
         """测试用例"""

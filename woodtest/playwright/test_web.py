@@ -10,6 +10,7 @@ f = open('testcase.yaml', mode='r')
 cases_dict = yaml.safe_load(f)
 # print(cases_dict)
 
+
 @allure.feature('报告标题')
 class Test_web:
 
@@ -49,7 +50,6 @@ class Test_web:
     def test_login(self, POCcases):
         self.run_case(POCcases)
         self.page.wait_for_timeout(2000)
-
 
     def teardown_class(self):
         self.page.wait_for_timeout(1000)

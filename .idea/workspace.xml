@@ -2,12 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6d0b448d-585a-4ea4-a3de-63d13f404b05" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/autotest/lib/cases/mgcase.xlsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/autotest/runner.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/autotest/common/excle.py" beforeDir="false" afterPath="$PROJECT_DIR$/autotest/common/excle.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/autotest/common/logger.py" beforeDir="false" afterPath="$PROJECT_DIR$/autotest/common/logger.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/autotest/ddt/excel_ddt.py" beforeDir="false" afterPath="$PROJECT_DIR$/autotest/ddt/excel_ddt.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/autotest/ddt/test_web_0.py" beforeDir="false" afterPath="$PROJECT_DIR$/autotest/ddt/test_web_0.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/autotest/lib/conf.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/autotest/lib/conf.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/autotest/report/reports.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/woodtest/playwright/test_web.py" beforeDir="false" afterPath="$PROJECT_DIR$/woodtest/playwright/test_web.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -61,7 +63,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.all (3)">
+  <component name="RunManager" selected="Python.runner (1)">
     <configuration name="all (1)" type="PythonConfigurationType" factoryName="Python">
       <module name="python" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -138,6 +140,27 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/woodtest/playwright/example1.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="runner (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="python" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/autotest" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/autotest/runner.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -232,21 +255,6 @@
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Unittests in test_web.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
-      <module name="python" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/woodtest/playwright" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_pattern" value="&quot;&quot;" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;$PROJECT_DIR$/woodtest/playwright/test_web.py&quot;" />
-      <option name="_new_targetType" value="&quot;PATH&quot;" />
-      <method v="2" />
-    </configuration>
     <configuration name="pytest for test_web.Test_web" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="python" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -271,16 +279,16 @@
       <item itemvalue="Python.example1" />
       <item itemvalue="Python tests.Unittests in login.py" />
       <item itemvalue="Python tests.Unittests in test_case.py" />
-      <item itemvalue="Python tests.Unittests in test_web.py" />
       <item itemvalue="Python tests.pytest for test_web.Test_web" />
+      <item itemvalue="Python.runner (1)" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.runner (1)" />
         <item itemvalue="Python.all (3)" />
         <item itemvalue="Python.example1" />
         <item itemvalue="Python.runner" />
         <item itemvalue="Python tests.pytest for test_web.Test_web" />
-        <item itemvalue="Python tests.Unittests in test_web.py" />
       </list>
     </recent_temporary>
   </component>

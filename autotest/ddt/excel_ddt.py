@@ -33,13 +33,15 @@ class DDT:
 
     def __run_pytest_case(self):
         logger.info(str(self.story_idx))
-        os.rename('./ddt/test_%s_0.py' % (self.type),
-                  './ddt/test_%s_%d.py' % (self.type, self.story_idx),)
+        # 通过更改文件名,去运行数据驱动
+        os.rename('./ddt/test_%s_%d.py' % (self.type, self.story_idx - 1,),
+                  './ddt/test_%s_%d.py' % (self.type, self.story_idx,))
 
-        pytest.main(['-s', './ddt/test_%s_%d.py' % (self.type, self.story_idx)])
+        pytest.main(['-s', './ddt/test_%s_%d.py' % (self.type, self.story_idx,), '--alluredir', 'result'])
 
-    def run_web_case(self, filepath='./date/*.xlsx'):
+    def run_web_case(self, filepath='./lib/cases/mgcase.xlsx'):
         self.type = 'web'
+        print(filepath)
         reader = get_reader(filepath)
         sheetname = reader.get_sheets()
         logger.info(sheetname)
@@ -98,7 +100,7 @@ class DDT:
             case = []
 
         # 所有用例跑完后,把文件名还原
-        os.rename('./ddt/test_web_%d.py' % (self.story_idx), './ddt/test_web_0.py')
+        os.rename('./ddt/test_web_%d.py' % (self.story_idx,), './ddt/test_web_0.py')
 
 
 ddt = DDT()
